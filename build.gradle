@@ -21,7 +21,7 @@ repositories {
 	}
 	maven {
 		name = "Ladysnake Libs"
-		url = 'https://maven.ladysnake.org/artifactory/mods'
+		url = 'https://maven.ladysnake.org/releases'
 	}
 	maven {
 		name = "JitPack"
@@ -54,7 +54,9 @@ repositories {
 		url = "https://api.modrinth.com/maven"
 		content {
 			includeGroup "maven.modrinth"
-		}
+	}
+
+		
 	}
 	// Workaround until Origins' dependencies update
 	// https://discord.com/channels/734127708488859831/838871885709705237/1122763121925300265
@@ -74,6 +76,7 @@ dependencies {
 	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
 	modImplementation "net.merchantpug:Apugli:${project.apugli_version}-fabric"
 	include "net.merchantpug:Apugli:${project.apugli_version}-fabric"
+	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:$version")
 
 	// Pehkui
 	modApi("com.github.Virtuoel:Pehkui:${pehkui_version}", {
