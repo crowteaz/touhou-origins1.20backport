@@ -8,5 +8,6 @@ Requires:
 - [Origins](https://github.com/apace100/origins-fabric)
 
 Only change made from the original mod was changing the required Minecraft version to 1.20 from 1.20.1. Might be unstable due to needing more testing.
+Also don't forget to support the original release of the mod too!
 
 *Disclaimer: This is a fan work based on Touhou Project. Touhou Project and its characters are the property of Team Shanghai Alice (ZUN).*
